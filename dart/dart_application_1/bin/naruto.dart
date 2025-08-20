@@ -1,6 +1,6 @@
 import 'character.dart';
 
-class Naruto extends Character {
+class NarutoCharacter extends Character {
   /// Pais da personagem
   String country;
 
@@ -10,7 +10,7 @@ class Naruto extends Character {
   /// Patente da personagem. Ex: Genin, Jounin, Chounin
   String rank;
 
-  Naruto({
+  NarutoCharacter({
     required super.name,
     required super.universe,
     required super.mainSkill,
@@ -20,4 +20,11 @@ class Naruto extends Character {
     required this.village,
     required this.rank,
   });
+
+  @override
+  String log() {
+    return '${super.log()}country: $country\n'
+        'village: $village\n'
+        'rank: $rank\n';
+  }
 }

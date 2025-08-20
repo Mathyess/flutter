@@ -23,7 +23,7 @@ class Character {
   });
 
   /// Printando caracteristicas
-  String print() {
+  String log() {
     return '''
       name: $name
       universe: $universe

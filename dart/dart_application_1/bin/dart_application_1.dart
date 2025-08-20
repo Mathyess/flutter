@@ -1,9 +1,8 @@
 import 'character.dart';
 import 'naruto.dart';
+import 'yasuo.dart';
 
 void main() {
-  print("Hello World!");
-
   /// Scrooge McDuck
   Character scroogeMcDuck = Character(
     name: 'scroongeMcDuck',
@@ -13,7 +12,7 @@ void main() {
     childrenCount: 0,
   );
 
-  print(scroogeMcDuck.print());
+  print(scroogeMcDuck.log());
 
   /// Itachi
   NarutoCharacter itachi = NarutoCharacter(
@@ -27,5 +26,19 @@ void main() {
     rank: 'Anbu',
   );
 
-  print(itachi.print());
+  /// Yasuo
+  YasuoCharacter yasuo = YasuoCharacter(
+    name: 'Yasuo',
+    universe: 'League of Legends',
+    mainSkill: 'Wind Technique',
+    isProtagonist: true,
+    childrenCount: 0,
+    lane: 'Mid Lane',
+    runeterra: 'Ionia',
+    type: 'Fighter',
+  );
+
+  print(itachi.log());
+  print(yasuo.log());
+  print(scroogeMcDuck.log());
 }
